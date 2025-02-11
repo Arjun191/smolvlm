@@ -7,7 +7,7 @@ from transformers.image_utils import load_image
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 # Load the image of the fruit
-image = load_image("URL_to_your_fruit_image.jpg")  # Replace with the actual URL or local path to fruit image
+image = load_image("./data/banana.jpg")  # Replace with the actual URL or local path to fruit image
 
 # Initialize the processor and model
 processor = AutoProcessor.from_pretrained("HuggingFaceTB/SmolVLM-Instruct")
